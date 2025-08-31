@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import { HashRouter, BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 import { HomePage, ProjectsPage, ResearchPage, WorkPage, ResumePage, FunPage, NotFoundPage } from "./components/Pages";
 
 export default function App() {
@@ -11,6 +11,7 @@ export default function App() {
         backgroundRepeat:"no-repeat",
         height:"100vh",
         position:"fixed",
+        padding:"0"
       }}/>
       <Routes>
         <Route path="/" element={<HomePage />} />

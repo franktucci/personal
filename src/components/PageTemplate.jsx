@@ -14,7 +14,7 @@ export default function PageTemplate(props) {
     </Container>
     <Container className="d-sm-none" fluid style={{paddingLeft:"0", paddingRight:"0", paddingBottom:"0"}}>
       <NavBar/>
-      <Card style={{borderRadius:"0", padding:"3rem", backgroundColor:"#071015", textDecorationColor:"white", boxShadow:"-20px 0 30px -3px black, 20px 0 30px -3px black"}}>
+      <Card style={{borderRadius:"0", padding:"1rem", backgroundColor:"#071015", textDecorationColor:"white", boxShadow:"-20px 0 30px -3px black, 20px 0 30px -3px black"}}>
         <span style={{color:"white"}}>
           {props.children}
         </span>

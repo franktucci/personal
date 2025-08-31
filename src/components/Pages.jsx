@@ -327,7 +327,7 @@ export function FunPage() {
 
   return (
     <PageTemplate>
-      <Stack direction="horizontal" className="flex-wrap flex-lg-nowrap reverse-flex" style={{gap:"3rem", rowGap:"2rem"}}>
+      <Stack direction="horizontal" className="flex-wrap flex-lg-nowrap reverse-flex" style={{rowGap:"2rem"}}>
         <Stack className="flex-grow-1">
           <Container className="d-flex justify-content-center mb-3">
             <Canvas colors={colors} attributes={attributes} counter={counter} attributeSelection={attributeSelection}/>
