@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Routes } from "react-router";
 import { HomePage, ProjectsPage, ResearchPage, WorkPage, ResumePage, FunPage, NotFoundPage } from "./components/Pages";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/personal">
       <Container fluid style={{
         backgroundImage:"url(./bg.png)", 
         backgroundSize:"cover",
@@ -19,7 +19,7 @@ export default function App() {
         <Route path="/work" element={<WorkPage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/fun" element={<FunPage/>} />
-        <Route path="*" element={<NotFoundPage/>} />
+        <Route path="/*" element={<NotFoundPage/>} />
       </Routes>
     </BrowserRouter>
   )
