@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <>
       <Navbar style={{backgroundColor:"#071015", boxShadow:"-20px 0 30px -3px black, 20px 0 30px -3px black"}}>
-        <Navbar.Brand className="z-1 ms-5" href="/#">
+        <Navbar.Brand className="z-1 ms-5" href="#">
           <Image style={{maxHeight:"150vw"}} src="./name.png" height="150vw" className="d-inline-block align-top" alt="Frank Tucci"/>
         </Navbar.Brand>
       </Navbar>
@@ -15,12 +15,12 @@ export default function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <Nav.Link className="ms-5" href="/#"><span style={{color:"white"}}>Home</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#work"><span style={{color:"white"}}>Work</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#projects"><span style={{color:"white"}}>Projects</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#research"><span style={{color:"white"}}>Research</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#resume"><span style={{color:"white"}}>Resume</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#fun"><span style={{color:"white"}}>Fun</span></Nav.Link>
+          <Nav.Link className="ms-5" href="#"><span style={{color:"white"}}>Home</span></Nav.Link>
+          <Nav.Link className="ms-5" href="#work"><span style={{color:"white"}}>Work</span></Nav.Link>
+          <Nav.Link className="ms-5" href="#projects"><span style={{color:"white"}}>Projects</span></Nav.Link>
+          <Nav.Link className="ms-5" href="#research"><span style={{color:"white"}}>Research</span></Nav.Link>
+          <Nav.Link className="ms-5" href="#resume"><span style={{color:"white"}}>Resume</span></Nav.Link>
+          <Nav.Link className="ms-5" href="#fun"><span style={{color:"white"}}>Fun</span></Nav.Link>
         </Nav>
         </Navbar.Collapse>
       </Navbar>
