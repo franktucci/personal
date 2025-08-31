@@ -4,7 +4,7 @@ import { HomePage, ProjectsPage, ResearchPage, WorkPage, ResumePage, FunPage, No
 
 export default function App() {
   return (
-    <BrowserRouter basename="/personal">
+    <HashRouter basename="/">
       <Container fluid style={{
         backgroundImage:"url(./bg.png)", 
         backgroundSize:"cover",
@@ -21,6 +21,6 @@ export default function App() {
         <Route path="/fun" element={<FunPage/>} />
         <Route path="/*" element={<NotFoundPage/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
