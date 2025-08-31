@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 import {IconBrandLinkedin, IconBrandGithub, IconX, IconCirclePlus, IconArrowsDiagonal, IconArrowsDiagonalMinimize2, IconDeviceImac, IconDownload} from '@tabler/icons-react';
 import PageTemplate from "./PageTemplate";
 import Canvas from "./Canvas";
-import ExampleDoc from "../Frank_Tucci_Resume.pdf";
+import Resume from "../Frank_Tucci_Resume.pdf";
 
 const backgroundColor = "#071015";
 const accentColor = "#326485";
@@ -42,7 +42,7 @@ export function HomePage() {
           </Stack>
           <div className="flex-grow-1"/>
           <p className="mb-0" style={{fontSize:10, lineHeight:"10px"}}>
-            This website was programmed by me (a human) in ReactJS using Bootstrap components. See the source <a style={{color:accentColor}} href="https://github.com/franktucci">here.</a>
+            This website was programmed by me (a human) in ReactJS using Bootstrap components. See the source <a style={{color:accentColor}} href="https://github.com/franktucci/personal">here.</a>
           </p>
         </Stack>         
       </Stack>
@@ -250,7 +250,7 @@ export function ResumePage() {
   return (
     <PageTemplate>
       <Stack>
-        <a className="align-self-center mb-3" href={ExampleDoc} download="Frank_Tucci_Resume" target="_blank" rel="noreferrer">
+        <a className="align-self-center mb-3" href={Resume} download="Frank_Tucci_Resume" target="_blank" rel="noreferrer">
           <Button style={{background:accentColor, borderColor:accentColor}}><Stack direction="horizontal" className="justify-content-center"><IconDownload/><div className="ms-2">Download</div></Stack></Button>
         </a>
         <div className="d-flex align-self-center">
@@ -367,7 +367,7 @@ export function FunPage() {
 export function NotFoundPage() {
   return (
     <PageTemplate>
-      <Stack className="justify-content-center">
+      <Stack>
         <span className="align-self-center" style={{fontSize:"200px"}}>404</span>
         <div className="align-self-center">not found.</div>
       </Stack>

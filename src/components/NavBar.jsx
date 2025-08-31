@@ -1,7 +1,6 @@
 import {Image, Navbar, Nav} from "react-bootstrap";
 import {IconCirclePlus} from '@tabler/icons-react';
 
-
 export default function NavBar() {
   return (
     <>
@@ -26,5 +25,5 @@ export default function NavBar() {
         </Navbar.Collapse>
       </Navbar>
     </>
-  )
+  );
 }
