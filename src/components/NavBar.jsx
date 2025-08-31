@@ -15,12 +15,12 @@ export default function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <Nav.Link className="ms-5" href="/#/personal"><span style={{color:"white"}}>Home</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#/personal/work"><span style={{color:"white"}}>Work</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#/personal/projects"><span style={{color:"white"}}>Projects</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#/personal/research"><span style={{color:"white"}}>Research</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#/personal/resume"><span style={{color:"white"}}>Resume</span></Nav.Link>
-          <Nav.Link className="ms-5" href="/#/personal/fun"><span style={{color:"white"}}>Fun</span></Nav.Link>
+          <Nav.Link className="ms-5" href="/personal/#"><span style={{color:"white"}}>Home</span></Nav.Link>
+          <Nav.Link className="ms-5" href="/personal/#/work"><span style={{color:"white"}}>Work</span></Nav.Link>
+          <Nav.Link className="ms-5" href="/personal/#/projects"><span style={{color:"white"}}>Projects</span></Nav.Link>
+          <Nav.Link className="ms-5" href="/personal/#/research"><span style={{color:"white"}}>Research</span></Nav.Link>
+          <Nav.Link className="ms-5" href="/personal/#/resume"><span style={{color:"white"}}>Resume</span></Nav.Link>
+          <Nav.Link className="ms-5" href="/personal/#/fun"><span style={{color:"white"}}>Fun</span></Nav.Link>
         </Nav>
         </Navbar.Collapse>
       </Navbar>
