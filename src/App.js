@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "react-bootstrap";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HomePage, ProjectsPage, ResearchPage, WorkPage, ResumePage, FunPage, NotFoundPage } from "./components/Pages";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter basename="/">
+      <Container fluid style={{
+        backgroundImage:"url(./bg.png)", 
+        backgroundSize:"cover",
+        backgroundRepeat:"no-repeat",
+        height:"100vh",
+        position:"fixed",
+      }}/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/research" element={<ResearchPage />} />
+        <Route path="/work" element={<WorkPage />} />
+        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/fun" element={<FunPage/>} />
+        <Route path="*" element={<NotFoundPage/>} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
-
-export default App;
