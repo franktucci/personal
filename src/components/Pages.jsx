@@ -64,16 +64,16 @@ export function ProjectsPage() {
       title: "Bay Area Rapid Transit (BART) API Travel Scheduler", 
       blurb: "Travel app frontend that leverages several of BART's Legacy API endpoints to let a traveller know their optimal route, as well as associated fare, travel time, stop schedule, and any needed transfers.",
       tags: ["React", "JavaScript"],
-      link: "./404",
-      source: "./404"
+      link: "#404",
+      source: "#404"
     },
     {
       id: 1,
       title: "Time Tracking App", 
       blurb: "Full stack app where a user track their day, organized by customizable categories and displays them using a pleasant graphical interface.",
       tags: ["React", "JavaScript", "FastAPI", "Python", "PostgreSQL"],
-      link: "./404",
-      source: "./404"
+      link: "#404",
+      source: "#404"
     },
     {
       id: 2,
@@ -253,8 +253,8 @@ export function ResumePage() {
         <a className="align-self-center mb-3" href={Resume} download="Frank_Tucci_Resume" target="_blank" rel="noreferrer">
           <Button style={{background:accentColor, borderColor:accentColor}}><Stack direction="horizontal" className="justify-content-center"><IconDownload/><div className="ms-2">Download</div></Stack></Button>
         </a>
-        <div className="d-flex align-self-center">
-          <iframe src="./Frank_Tucci_Resume.pdf" width="800" height="600"/>
+        <div style={{width:"100%"}} className="d-flex align-self-center">
+          <iframe src="./Frank_Tucci_Resume.pdf" style={{aspectRatio:.75}}/>
         </div>
       </Stack>
     </PageTemplate>
