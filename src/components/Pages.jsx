@@ -336,8 +336,8 @@ export function FunPage() {
             <Button style={{background:accentColor, borderColor:accentColor}} onClick={handleDownload}><Stack direction="horizontal" className="justify-content-center"><IconDownload/><div className="ms-2">Download</div></Stack></Button>
           </Container>
         </Stack>
-        <Stack>
-          <Container className="p-3" style={{backgroundColor:accentColor, borderRadius:"20px", maxWidth:"350px", width:"stretch"}}>
+        <Stack style={{width:"min-content"}}>
+          <Container className="p-3" style={{backgroundColor:accentColor, borderRadius:"15px", maxWidth:"350px", width:"stretch"}}>
             <div style={{fontSize:30}} className="mb-3"><b>Dragon Designer</b></div>
             <Form>
               <Stack gap="3" direction="horizontal">
@@ -354,7 +354,7 @@ export function FunPage() {
               </Stack>
             </Form>
             <div className="mb-3">Recents</div>
-            <Stack direction="horizontal" className="justify-content-end gap-1 flex-wrap" style={{flexDirection:"row-reverse"}}>
+            <Stack direction="horizontal" className="justify-content-end gap-1 flex-wrap" style={{width:"fit-content", flexDirection:"row-reverse"}}>
               {recentColorList.map(x => <Badge id={x.color} bg="" style={{background:x.color, cursor:"pointer", width:"30px", height:"30px"}} onClick={handleRecentColorSelection}><div/></Badge>)}
             </Stack>
           </Container>
