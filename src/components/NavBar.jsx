@@ -15,7 +15,7 @@ export default function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <Nav.Link className="ms-5" href="./"><span style={{color:"white"}}>Home</span></Nav.Link>
+          <Nav.Link className="ms-5" href="#/"><span style={{color:"white"}}>Home</span></Nav.Link>
           <Nav.Link className="ms-5" href="#work"><span style={{color:"white"}}>Work</span></Nav.Link>
           <Nav.Link className="ms-5" href="#projects"><span style={{color:"white"}}>Projects</span></Nav.Link>
           <Nav.Link className="ms-5" href="#research"><span style={{color:"white"}}>Research</span></Nav.Link>
