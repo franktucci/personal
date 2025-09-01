@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/personal/static/css/main.3ce7bc41.css",
-    "main.js": "/personal/static/js/main.fba501a8.js",
+    "main.js": "/personal/static/js/main.0d0cfba8.js",
     "static/media/Frank_Tucci_Resume.pdf": "/personal/static/media/Frank_Tucci_Resume.19d6f0b93f615a48ed1f.pdf",
     "index.html": "/personal/index.html",
     "main.3ce7bc41.css.map": "/personal/static/css/main.3ce7bc41.css.map",
-    "main.fba501a8.js.map": "/personal/static/js/main.fba501a8.js.map"
+    "main.0d0cfba8.js.map": "/personal/static/js/main.0d0cfba8.js.map"
   },
   "entrypoints": [
     "static/css/main.3ce7bc41.css",
-    "static/js/main.fba501a8.js"
+    "static/js/main.0d0cfba8.js"
   ]
 }
